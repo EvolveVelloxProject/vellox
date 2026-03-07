@@ -1,0 +1,31 @@
+/* ===== VelloxLogo Component ===== */
+.vellox-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    animation: logo-float 6s ease-in-out infinite;
+}
+
+.vellox-logo-svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 12px rgba(0, 234, 255, 0.3));
+    transition: filter 0.3s ease;
+}
+
+.vellox-logo:hover .vellox-logo-svg {
+    filter: drop-shadow(0 0 24px rgba(179, 75, 245, 0.5));
+}
+
+@keyframes logo-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
